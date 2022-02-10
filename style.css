@@ -4,19 +4,22 @@
     box-sizing: border-box;
 }
 .container {
-    width: 25.3125rem;
+    width: 28.125rem;
     height: 43rem;
     margin: auto;
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3,135px);
+    grid-template-columns: repeat(3,150px);
     grid-template-rows: 4fr 15fr 4fr 4fr 4fr 2fr;
-    border: 1px solid;
+    /* border: 1px solid; */
+    /* box-shadow: 3px 3px 3px 5px grey; */
+    box-shadow:rgba(0, 0, 0, 5) 4px 10px 16px 0px;
+    border-radius: 10px;
 
 }
 
 .content {
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .content1 {
