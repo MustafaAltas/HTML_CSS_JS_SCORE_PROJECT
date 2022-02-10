@@ -1,3 +1,4 @@
+let content = document.querySelector(".container")
 const player1 = document.getElementById("submit1")
 const player2 = document.getElementById("submit2")
 const reset = document.getElementById("reset")
@@ -8,42 +9,33 @@ let player2_score = document.querySelector(".content4_sağ")
 
 
 //***********Olaylar */
-player1.addEventListener("click",artış1);
-player2.addEventListener("click", artış2);
-reset.addEventListener("click",resett);
-score.addEventListener("change",skor);
+player1.addEventListener("click",artış);
+player2.addEventListener("click", artış);
+reset.addEventListener("click",artış);
+score.addEventListener("change",artış);
 
 
 
-function skor(event) {
-    let p = document.createElement("p")
-    p.appendChild(document.createTextNode(event.target.value));
-    console.log(p);
+function artış(event) {
+
+    if (event.target == player1) {
+        var span1 = document.createElement("span");
+        span1.setAttribute("class","content4_sol");
+        span1.innerText = player1_score.innerText++ + 1;
+        
+    } else if (event.target == player2) {
+        var span2 = document.createElement("span");
+        span2.setAttribute("class","content4_sağ");
+        span2.innerText = player2_score.innerText++ + 1;
+    } else if (event.target == reset) {
+        player1_score.innerText = 0;
+        player2_score.innerText = 0;
+    } else if (event.target == score) {
+        var span3 = document.createElement("span");
+        span3.appendChild(document.createTextNode(event.target.value));
+    }
+
 }
-
-
-
-
-
-
-
-function resett(event) {
-    player1_score.innerText = "0"
-    player2_score.innerText = "0"
-}
-function artış1(event) {
-    
-    let a = player1_score.innerText++;
-
-}
-
-
-
-function artış2(event) {
-    return player2_score.innerText++;
-}
-
-//*********Koşullar */
 
 
 
