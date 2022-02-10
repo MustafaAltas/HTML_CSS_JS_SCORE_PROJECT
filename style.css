@@ -18,9 +18,6 @@
 
 }
 
-.content {
-    /* border: 1px solid; */
-}
 
 .content1 {
     grid-column: 1 / span 3;
@@ -59,14 +56,27 @@
     width: 100%;
     height: 100%;
     background-color: #90EE90;
+    border: none;
+    row-gap: 5px;
+}
+.submit1:hover {
+    background-color: #5bd65b;
 }
 .submit2 {
     width: 100%;
     height: 100%;
     background-color: #ADD8E6;
+    border: none;
+}
+.submit2:hover {
+    background-color: #66b6d1;
 }
 .reset {
     width: 100%;
     height: 100%;
     background-color: #FFC9CE;
+    border: none;
+}
+.reset:hover {
+    background-color: #d3636e;
 }
